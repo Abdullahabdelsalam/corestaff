@@ -3,12 +3,11 @@ package com.corestaff.service;
 import com.corestaff.model.User;
 import com.corestaff.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-@Primary
+
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
