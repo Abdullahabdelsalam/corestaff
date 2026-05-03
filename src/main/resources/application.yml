@@ -1,0 +1,27 @@
+server:
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+  port: 9090
+
+spring:
+  application:
+    name: corestaff
+
+  profiles:
+    active: dev
+
+#  security:
+#    user:
+#      name: admin
+#      password: admin123
+
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    root: INFO
